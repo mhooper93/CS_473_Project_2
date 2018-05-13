@@ -1,0 +1,19 @@
+<div id="background_box" class="jumbotron text-center">
+
+  <div id="center_box" class="jumbotron text-center">
+    <h3 id="header">Login</h3>
+    <img id="login_icon" src="/img/icon2.png" alt="login_icon" />
+
+    <div id="loginStuff">
+      {{input type="email" value=userEmail class="form-control" placeholder="Enter your e-mail" autofocus="autofocus"}}
+    </div>
+    <div id="loginStuff">
+      {{input type="password" value=userPassword class="form-control" placeholder="Enter your password (at least 8)"}}
+    </div>
+    <br/>
+    <div id="loginStuff">
+      <button disabled= {{isDisabled}} {{action 'logIn'}} class="btn btn-primary login-button btn-block">Login</button>
+    </div>
+      {{#link-to 'register'}}<a href="">Sign Up</a>{{/link-to}}
+  </div>
+</div>

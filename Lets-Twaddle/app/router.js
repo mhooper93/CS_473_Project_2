@@ -7,6 +7,12 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('about');
+  this.route('privateroom', { path: '/:message_id/privateroom'});
+  this.route('login');
+  this.route('logout');
+  this.route('practice');
+  this.route('register');
 });
 
 export default Router;
